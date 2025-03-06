@@ -14,7 +14,10 @@ const Button: React.FC<ButtonProps> = (props) => {
         className,
         hoverBig,
         btnBg,
-        hoverBg
+        hoverBg,
+        hoverText,
+        bdrs = true,
+        ariaLabel
     } = props
 
     return (
@@ -25,9 +28,12 @@ const Button: React.FC<ButtonProps> = (props) => {
                     'btn',
                     hoverBig && 'btn--hover-big',
                     btnBg && `btn--bg-${btnBg}`,
-                    hoverBg && `btn--hover-bg-${hoverBg}`
+                    hoverBg && `btn--hover-bg-${hoverBg}`,
+                    hoverText && `btn--hover-text-${hoverText}`,
+                    !bdrs && 'btn--bdrs-unset'
                 )
             }
+            aria-label={ariaLabel}
         >
             {title ?? content}
         </div >

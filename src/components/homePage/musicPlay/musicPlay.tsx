@@ -2,6 +2,9 @@
 import { Row, Col } from "../../Layout/layout.tsx"
 import { Button } from "../../common/button/button.tsx"
 
+// style
+import './musicPlay.sass'
+
 const MusicPlay = () => {
     return (
         <div className="musicPlay">

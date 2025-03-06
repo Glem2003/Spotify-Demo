@@ -1,4 +1,4 @@
-type color = 'white' | 'gray' | 'black'
+export type color = 'white' | 'black'
 
 export interface ButtonProps {
     title?: string
@@ -7,4 +7,7 @@ export interface ButtonProps {
     hoverBig?: boolean
     btnBg?: color
     hoverBg?: color
+    hoverText?: color
+    bdrs?: boolean
+    ariaLabel?: string
 }

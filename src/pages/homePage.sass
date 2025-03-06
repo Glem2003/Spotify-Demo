@@ -7,13 +7,6 @@
 .homePage
     margin: 6px 10px
 
-.navBar
-    background: variable.$primaryColor
-    color: white
-    height: 50px
-    padding-left: 20px
-    width: 90%
-
 .homePageMain
     height: calc( 80vh - 15px ) !important
     margin: 8px 0
@@ -26,22 +19,7 @@
 .homePageSelectArea
     flex: 2
 
-.musicPlay
-    color: white
-    height: 10vh
-    background-image: linear-gradient(90deg,#af2896,#509bf5)
-
 // element
-.musicPlay
-    &__info
-        flex: 2
-        padding-left: 10px
-        line-height: 22px
-    &__btnBox
-        flex: .5
-        padding-right: 20px
-    &__signUpBtn
-        padding: 15px 30px !important
 
 .slideArea,.selectArea
     height: 100%
@@ -52,76 +30,3 @@
 
 .selectArea
     background-color: variable.$thirdColor
-
-.navBar
-    &__logoBox
-        flex: .1
-    &__searchBox
-        flex: .8
-        gap: 8px
-    &__functionArea
-        flex: 1
-    &__logo
-        width: 60%
-        height: 100%
-    &__homeLogo
-        border-radius: 50%
-        svg
-            transform: scale(1.6)
-
-.searchBox
-    width: 100%
-    height: 100%
-    padding: 0 12px
-    border-radius: 25px
-    overflow: hidden
-    display: flex
-    align-items: center
-    gap: 12px
-    background: variable.$secondaryColor
-    color: variable.$textColor
-    &::after
-        content: ''
-        display: block
-        position: relative
-        background: variable.$textColor
-        width: 1px
-        height: 24px
-        right: 40px
-    &__input
-        width: 100%
-        font-size: 16px
-        border: none
-        font-weight: 750
-        background: unset
-        color: white
-        height: 100%
-        outline: none
-    &__logo,&__browse
-        transform: scale(1.6)
-    &__browse
-        cursor: pointer
-        &:hover
-            transform: scale(1.8)
-            color: white
-
-.functionArea
-    display: flex
-    width: max-content
-    height: 100%
-    color: variable.$textColor
-    font-weight: 750
-    gap: 24px
-    margin-left: 10px
-    &__areaBtn,&__functionBtn
-        display: flex
-        gap: 8px
-        align-items: center
-    &__areaBtn::after
-        content: ''
-        display: block
-        width: 1px
-        height: 26px
-        background-color: white
-        position: relative
-        left: 8px
