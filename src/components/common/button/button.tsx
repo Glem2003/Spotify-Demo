@@ -8,22 +8,30 @@ import { ButtonProps } from './button.type'
 
 const Button: React.FC<ButtonProps> = (props) => {
 
-    const { title, className, bgWhite, hoverBig } = props
+    const {
+        title,
+        content,
+        className,
+        hoverBig,
+        btnBg,
+        hoverBg
+    } = props
 
     return (
         <div
             className={
                 clsx(
                     className,
-                    'button button--hover-big',
-                    { 'button--bg-white': bgWhite },
-                    { 'button--hover-big': hoverBig }
+                    'btn',
+                    hoverBig && 'btn--hover-big',
+                    btnBg && `btn--bg-${btnBg}`,
+                    hoverBg && `btn--hover-bg-${hoverBg}`
                 )
             }
         >
-            {title}
-        </div>
+            {title ?? content}
+        </div >
     )
 }
 
-export default Button
+export { Button }

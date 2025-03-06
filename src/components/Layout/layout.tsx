@@ -19,7 +19,7 @@ export const Row: React.FC<RowProps> = (props) => {
                 clsx(
                     className,
                     'row',
-                    { 'row--vertical-center': verticalCenter }
+                    verticalCenter && 'row--vertical-center'
                 )
             }
         >
@@ -30,7 +30,7 @@ export const Row: React.FC<RowProps> = (props) => {
 
 export const Col: React.FC<ColProps> = (props) => {
 
-    const { children, className, horizonRight } = props
+    const { children, className, horizonRight, verticalCenter } = props
 
     return (
         <div
@@ -38,7 +38,8 @@ export const Col: React.FC<ColProps> = (props) => {
                 clsx(
                     className,
                     'col',
-                    { 'col--horizon-right': horizonRight }
+                    horizonRight && 'col--horizon-right',
+                    verticalCenter && 'col--vertical-center'
                 )
             }
         >

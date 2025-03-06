@@ -5,7 +5,7 @@ const Main = () => {
         <Row className='homePageMain'>
             <Col className='homePageSlideArea'>
                 <div className="slideArea bd">
-
+                    
                 </div>
             </Col>
             <Col className='homePageSelectArea'>

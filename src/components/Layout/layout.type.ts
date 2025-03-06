@@ -10,4 +10,5 @@ export interface ColProps {
     className?: string;
     children?: ReactNode;
     horizonRight?: boolean
+    verticalCenter?: boolean
 }

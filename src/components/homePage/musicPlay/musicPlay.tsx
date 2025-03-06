@@ -1,6 +1,6 @@
 // components
 import { Row, Col } from "../../Layout/layout.tsx"
-import Button from "../../common/button/button.tsx"
+import { Button } from "../../common/button/button.tsx"
 
 const MusicPlay = () => {
     return (
@@ -15,10 +15,11 @@ const MusicPlay = () => {
                     horizonRight
                 >
                     <Button
-                        bgWhite
-                        hoverBig
                         title="Sign up free"
                         className="musicPlay__signUpBtn"
+                        btnBg="white"
+                        hoverBig
+                        hoverBg="white"
                     />
                 </Col>
             </Row>

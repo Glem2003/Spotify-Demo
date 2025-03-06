@@ -1,6 +1,10 @@
+type color = 'white' | 'gray' | 'black'
+
 export interface ButtonProps {
     title?: string
+    content?: React.ReactNode
     className?: string
-    bgWhite?: boolean
     hoverBig?: boolean
+    btnBg?: color
+    hoverBg?: color
 }
