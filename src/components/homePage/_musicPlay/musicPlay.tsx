@@ -23,6 +23,7 @@ const MusicPlay = () => {
                         btnBg="white"
                         hoverBig
                         hoverBg="white"
+                        fontSize={14}
                     />
                 </Col>
             </Row>

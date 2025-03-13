@@ -3,7 +3,7 @@ import { ImSpotify } from '../../../../assets/icon/index'
 import { Link } from 'react-router-dom'
 
 // type
-import { LogoProps } from './navBar__logo.type'
+import { LogoProps } from './logo.type'
 
 const Logo: React.FC<LogoProps> = (props) => {
 

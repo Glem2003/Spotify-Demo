@@ -6,21 +6,27 @@ export const navBarMenu = [
         className: 'functionArea__btnList',
         hoverText: 'white',
         bdrs: false,
-        hoverBig: true
+        hoverBig: true,
+        color: 'gray',
+        fontSize: 16
     },
     {
         title: 'Support',
         className: 'functionArea__btnList',
         hoverText: 'white',
         bdrs: false,
-        hoverBig: true
+        hoverBig: true,
+        color: 'gray',
+        fontSize: 16
     },
     {
         title: 'Download',
         className: 'functionArea__btnList',
         hoverText: 'white',
         bdrs: false,
-        hoverBig: true
+        hoverBig: true,
+        color: 'gray',
+        fontSize: 16
     },
     {
         content: <><FaRegArrowAltCircleDown />Install App</>,
@@ -28,14 +34,18 @@ export const navBarMenu = [
         bdrs: false,
         className: 'functionArea__btnList',
         hoverBig: true,
-        hoverText: 'white'
+        hoverText: 'white',
+        color: 'gray',
+        fontSize: 16
     },
     {
         title: 'Sign up',
         bdrs: false,
         className: 'functionArea__btnList',
         hoverBig: true,
-        hoverText: 'white'
+        hoverText: 'white',
+        color: 'gray',
+        fontSize: 16
     },
     {
         title: 'Log in',
@@ -43,6 +53,7 @@ export const navBarMenu = [
         className: 'functionArea__btnList',
         btnBg: 'white',
         hoverBig: true,
-        hoverBg: 'white'
+        hoverBg: 'white',
+        fontSize: 16
     }
 ]

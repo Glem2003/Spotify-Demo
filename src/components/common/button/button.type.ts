@@ -1,13 +1,16 @@
-export type color = 'white' | 'black'
+export type color = 'white' | 'black' | 'gray'
 
 export interface ButtonProps {
     title?: string
     content?: React.ReactNode
-    className?: string
+    className?: string,
+    fontSize?: number
     hoverBig?: boolean
     btnBg?: color
+    color?: color
     hoverBg?: color
     hoverText?: color
     bdrs?: boolean
     ariaLabel?: string
+    onClick?: () => void
 }

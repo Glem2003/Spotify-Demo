@@ -1,0 +1,72 @@
+@use '../../../../assets/style/variable'
+
+// layout
+.slideArea
+    background: variable.$thirdColor
+    display: flex
+    flex-direction: column
+    padding-left: 8px
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 80px
+        padding: 0 10px
+        margin-bottom: 16px
+    &__headerTitle
+        display: flex
+        gap: 8px
+    &__main
+        flex-grow: 1
+        overflow: overlay
+        position: relative
+        +variable.scrollbar(12px, #555, transparent)
+    &__footer
+        width: 80%
+        height: 50%
+        padding: 20px 0 0 16px
+    &__footerNavigation
+        font-size: 11px
+        line-height: 24px
+    &__footerList
+        display: flex
+        gap: 8px
+        flex-wrap: wrap
+        color: variable.$textColor
+        margin-bottom: 8px
+
+// element
+.slideArea
+    svg
+        transform: scale(1.6)
+    &__headerBtn
+        display: flex
+        border-radius: 50% !important
+        padding: 10px !important
+    &__footerCookies:hover
+        text-decoration: underline
+    &__footerBtn
+        display: flex
+        align-items: center
+        gap: 10px
+        margin-top: 24px
+        padding: 6px 14px !important
+        border: 1px solid #888787
+        &:hover
+            transform: scale(1.05)
+            border: 1px solid white
+    &__card
+        display: flex
+        flex-direction: column
+        gap: 16px
+        padding: 24px
+        margin-bottom: 24px
+    span
+        &[aria-label="slideAreaCard__title"]
+            font-weight: 750
+        &[aria-label="slideAreaCard__text"]
+            font-size: 14px
+
+.slideAreaCard
+    &__btn
+        padding: 8px 12px

@@ -1,4 +1,20 @@
+@use "sass:color"
+
 $primaryColor: #000000
 $secondaryColor: #1f1f1f
-$thirdColor: #2a2a2a
+$thirdColor: #121212
 $textColor: #b3b3b3
+
+@mixin scrollbar($width: 8px, $thumb-color: #888, $track-color: #f1f1f1)
+
+    &::-webkit-scrollbar
+        width: $width
+        height: $width
+
+    &::-webkit-scrollbar-track
+        background: $track-color
+
+    &::-webkit-scrollbar-thumb // background color
+        background: $thumb-color
+        &:hover
+            background: color.adjust($thumb-color, $lightness: 10%)
