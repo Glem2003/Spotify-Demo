@@ -6,12 +6,18 @@ import Footer from './_footer/footer'
 // style
 import './slideArea.sass'
 
-const SlideArea = () => {
+// type
+import { footerProp } from './_footer/footer.type'
+
+const SlideArea: React.FC<footerProp> = (props) => {
+
+    const { onClick, lang } = props
+
     return (
         <div className="slideArea">
             <Header />
             <Main />
-            <Footer />
+            <Footer onClick={onClick} lang={lang} />
         </div>
     )
 }

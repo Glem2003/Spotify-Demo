@@ -1,3 +1,6 @@
+// hook
+import useLangSelect from '../hooks/useLangSelect.tsx'
+
 // style
 import './homePage.sass'
 
@@ -8,12 +11,24 @@ import MusicPlay from '../components/homePage/musicPlay/musicPlay.tsx'
 import LangSelect from '../components/homePage/langSelect/langSelect.tsx'
 
 const HomePage = () => {
+
+    const {
+        isActive,
+        isLang,
+        handleClick,
+        handleSelectLang
+    } = useLangSelect()
+
     return (
         <div className='homePage'>
             <NavBar />
-            <Main />
+            <Main onClick={handleClick} lang={isLang} />
             <MusicPlay />
-            <LangSelect />
+            {isActive &&
+                <LangSelect
+                    closeOnClick={handleClick}
+                    langSelectHandleClick={handleSelectLang}
+                />}
         </div>
     )
 }

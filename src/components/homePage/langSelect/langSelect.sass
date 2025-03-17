@@ -11,7 +11,11 @@
     display: flex
     justify-content: center
     align-items: center
-    display: none // debug
+
+.langSelectBody
+    position: absolute
+    width: 100%
+    height: 100%
 
 .langSelect
     width: 70%
@@ -21,6 +25,7 @@
     overflow: hidden
     display: flex
     flex-direction: column
+    z-index: 3
     &__header
         flex-basis: 80px
         padding: 16px

@@ -1,15 +1,20 @@
+import { useTranslation } from "react-i18next"
+
 // components
 import { Button } from "../../../../common/button/button"
 import Card from "../../../../common/card/card"
 
 const Main = () => {
+
+    const { t } = useTranslation()
+
     return (
         <div className="slideArea__main">
             <Card className="slideArea__card">
-                <span aria-label="slideAreaCard__title">Create your first playlist</span>
-                <span aria-label="slideAreaCard__text">It's easy, we'll help you</span>
+                <span aria-label="slideAreaCard__title">{t('create your first playlist')}</span>
+                <span aria-label="slideAreaCard__text">{t("it's easy, we'll help you")}</span>
                 <Button
-                    title="Create playlist"
+                    title={t("create playlist")}
                     fontSize={14}
                     hoverBig
                     hoverBg='white'
@@ -18,10 +23,10 @@ const Main = () => {
                 />
             </Card>
             <Card className="slideArea__card">
-                <span aria-label="slideAreaCard__title">Let's find some podcasts to follow</span>
-                <span aria-label="slideAreaCard__text">We'll keep you updated on new episodes</span>
+                <span aria-label="slideAreaCard__title">{t("let's find some podcasts to follow")}</span>
+                <span aria-label="slideAreaCard__text">{t("we'll keep you updated on new episodes")}</span>
                 <Button
-                    title="Browse podcasts"
+                    title={t("browse podcasts")}
                     fontSize={14}
                     hoverBig
                     hoverBg='white'

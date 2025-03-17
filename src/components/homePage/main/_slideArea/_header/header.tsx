@@ -1,18 +1,23 @@
+import { useTranslation } from 'react-i18next'
+
 // icon
-import { BiLibrary, IoMdAdd } from '../../../../../assets/icon/index'
+import { IoMdAdd } from '../../../../../assets/icon/index'
 
 // components
 import { Button } from "../../../../common/button/button"
 
 const Header = () => {
+
+    const { t } = useTranslation()
+
     return (
         <div className="slideArea__header">
             <Button
-                content={<><BiLibrary />Your Library</>}
+                title={t('your Library')}
                 className='slideArea__headerTitle'
-                color='gray'
-                hoverText='white'
+                color='white'
                 fontSize={16}
+                cursor='default'
             />
             <Button
                 content={<IoMdAdd />}

@@ -1,4 +1,5 @@
 export type color = 'white' | 'black' | 'gray'
+export type cursor = 'default' | 'pointer'
 
 export interface ButtonProps {
     title?: string
@@ -12,5 +13,6 @@ export interface ButtonProps {
     hoverText?: color
     bdrs?: boolean
     ariaLabel?: string
+    cursor?: cursor
     onClick?: () => void
 }

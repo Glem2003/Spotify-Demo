@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 // icon
 import { MdOutlineLanguage } from '../../../../../assets/icon/index'
@@ -6,24 +7,34 @@ import { MdOutlineLanguage } from '../../../../../assets/icon/index'
 // components
 import { Button } from "../../../../common/button/button"
 
-const Footer = () => {
+// data
+import { footerList } from '../../../../../data/footerList'
+
+// type
+import { footerProp } from './footer.type'
+
+const Footer: React.FC<footerProp> = (props) => {
+
+    const { onClick, lang } = props
+    const { t } = useTranslation()
+
     return (
         <div className="slideArea__footer">
             <nav className="slideArea__footerNavigation">
                 <ul className='slideArea__footerList'>
-                    <li><Link to={'#!'}>Legal</Link></li>
-                    <li><Link to={'#!'}>Safety & PrivacyCenter</Link></li>
-                    <li><Link to={'#!'}>Privacy Policy</Link></li>
-                    <li><Link to={'#!'}>Cookies</Link></li>
-                    <li><Link to={'#!'}>About Ads</Link></li>
-                    <li><Link to={'#!'}>Accessibility</Link></li>
+                    {footerList.map(({ link, text }, index) => {
+                        return (
+                            <li key={index}><Link to={link}>{t(text)}</Link></li>
+                        )
+                    })}
                 </ul>
                 <Link to={'#!'} className='slideArea__footerCookies'>Cookies</Link>
             </nav>
             <Button
-                content={<><MdOutlineLanguage />English</>}
+                content={<><MdOutlineLanguage />{lang}</>}
                 className='slideArea__footerBtn'
                 fontSize={14}
+                onClick={onClick}
             />
         </div>
     )

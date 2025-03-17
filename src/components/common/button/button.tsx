@@ -20,7 +20,8 @@ const Button: React.FC<ButtonProps> = (props) => {
         hoverText,
         bdrs = true,
         ariaLabel,
-        onClick
+        onClick,
+        cursor = 'pointer'
     } = props
 
     return (
@@ -35,7 +36,8 @@ const Button: React.FC<ButtonProps> = (props) => {
                     color && `btn--color-${color}`,
                     hoverBg && `btn--hover-bg-${hoverBg}`,
                     hoverText && `btn--hover-text-${hoverText}`,
-                    !bdrs && 'btn--bdrs-unset'
+                    !bdrs && 'btn--bdrs-unset',
+                    cursor && `btn--cursor-${cursor}`
                 )
             }
             aria-label={ariaLabel}

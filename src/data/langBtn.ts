@@ -1,298 +1,372 @@
 export const langBtn = [
     {
         title: "English",
-        subtitle: "English"
+        subtitle: "English",
+        code: 'en'
     },
     {
         title: "Afrikaans",
-        subtitle: "Afrikaans"
+        subtitle: "Afrikaans",
+        code: ''
     },
     {
         title: "አማርኛ",
-        subtitle: "Amharic"
+        subtitle: "Amharic",
+        code: ''
     },
     {
         title: "العَرَبِيَّة",
-        subtitle: "Arabic"
+        subtitle: "Arabic",
+        code: ''
     },
     {
         title: "عربي مصري",
-        subtitle: "Arabic (Egypt)"
+        subtitle: "Arabic (Egypt)",
+        code: ''
     },
     {
         title: "العَرَبِيَّة مغربي",
-        subtitle: "Arabic (Morocco)"
+        subtitle: "Arabic (Morocco)",
+        code: ''
     },
     {
         title: "العربية السعودية",
-        subtitle: "Arabic (Saudi Arabia)"
+        subtitle: "Arabic (Saudi Arabia)",
+        code: ''
     },
     {
         title: "Azərbaycanca",
-        subtitle: "Azerbaijani"
+        subtitle: "Azerbaijani",
+        code: ''
     },
     {
         title: "Български",
-        subtitle: "Bulgarian"
+        subtitle: "Bulgarian",
+        code: ''
     },
     {
         title: "भोजपुरी",
-        subtitle: "Bhojpuri"
+        subtitle: "Bhojpuri",
+        code: ''
     },
     {
         title: "বাংলা",
-        subtitle: "Bengali"
+        subtitle: "Bengali",
+        code: ''
     },
     {
         title: "Bosanski",
-        subtitle: "Bosnian"
+        subtitle: "Bosnian",
+        code: ''
     },
     {
         title: "Català",
-        subtitle: "Catalan"
+        subtitle: "Catalan",
+        code: ''
     },
     {
         title: "Čeština",
-        subtitle: "Czech"
+        subtitle: "Czech",
+        code: ''
     },
     {
         title: "Dansk",
-        subtitle: "Danish"
+        subtitle: "Danish",
+        code: ''
     },
     {
         title: "Deutsch",
-        subtitle: "German"
+        subtitle: "German",
+        code: ''
     },
     {
         title: "Eλληνικά",
-        subtitle: "Greek"
+        subtitle: "Greek",
+        code: ''
     },
     {
         title: "English",
-        subtitle: "United Kingdom"
+        subtitle: "United Kingdom",
+        code: ''
     },
     {
         title: "Español de España",
-        subtitle: "European Spanish"
+        subtitle: "European Spanish",
+        code: ''
     },
     {
         title: "Español de Latinoamérica",
-        subtitle: "Latin American Spanish"
+        subtitle: "Latin American Spanish",
+        code: ''
     },
     {
         title: "Español (Argentina)",
-        subtitle: "Spanish (Argentina)"
+        subtitle: "Spanish (Argentina)",
+        code: ''
     },
     {
         title: "Español (México)",
-        subtitle: "Spanish (Mexico)"
+        subtitle: "Spanish (Mexico)",
+        code: ''
     },
     {
         title: "Eesti",
-        subtitle: "Estonian"
+        subtitle: "Estonian",
+        code: ''
     },
     {
         title: "Euskara",
-        subtitle: "Basque"
+        subtitle: "Basque",
+        code: ''
     },
     {
         title: "فارسی",
-        subtitle: "Persian"
+        subtitle: "Persian",
+        code: ''
     },
     {
         title: "Suomeksi",
-        subtitle: "Finnish"
+        subtitle: "Finnish",
+        code: ''
     },
     {
         title: "Filipino",
-        subtitle: "Filipino"
+        subtitle: "Filipino",
+        code: ''
     },
     {
         title: "Français",
-        subtitle: "French"
+        subtitle: "French",
+        code: ''
     },
     {
         title: "Français Canadien",
-        subtitle: "Canadian French"
+        subtitle: "Canadian French",
+        code: ''
     },
     {
         title: "Galego",
-        subtitle: "Galician"
+        subtitle: "Galician",
+        code: ''
     },
     {
         title: "ગુજરાતી",
-        subtitle: "Gujarati"
+        subtitle: "Gujarati",
+        code: ''
     },
     {
         title: "עברית",
-        subtitle: "Hebrew"
+        subtitle: "Hebrew",
+        code: ''
     },
     {
         title: "हिन्दी",
-        subtitle: "Hindi"
+        subtitle: "Hindi",
+        code: ''
     },
     {
         title: "Hrvatski",
-        subtitle: "Croatian"
+        subtitle: "Croatian",
+        code: ''
     },
     {
         title: "Magyar",
-        subtitle: "Hungarian"
+        subtitle: "Hungarian",
+        code: ''
     },
     {
         title: "Bahasa Indonesia",
-        subtitle: "Indonesian"
+        subtitle: "Indonesian",
+        code: ''
     },
     {
         title: "Íslenska",
-        subtitle: "Icelandic"
+        subtitle: "Icelandic",
+        code: ''
     },
     {
         title: "Italiano",
-        subtitle: "Italian"
+        subtitle: "Italian",
+        code: ''
     },
     {
         title: "日本語",
-        subtitle: "Japanese"
+        subtitle: "Japanese",
+        code: ''
     },
     {
         title: "ಕನ್ನಡ",
-        subtitle: "Kannada"
+        subtitle: "Kannada",
+        code: ''
     },
     {
         title: "한국어",
-        subtitle: "Korean"
+        subtitle: "Korean",
+        code: ''
     },
     {
         title: "Lietuvių",
-        subtitle: "Lithuanian"
+        subtitle: "Lithuanian",
+        code: ''
     },
     {
         title: "Latviešu",
-        subtitle: "Latvian"
+        subtitle: "Latvian",
+        code: ''
     },
     {
         title: "Македонски",
-        subtitle: "Macedonian"
+        subtitle: "Macedonian",
+        code: ''
     },
     {
         title: "മലയാളം",
-        subtitle: "Malayalam"
+        subtitle: "Malayalam",
+        code: ''
     },
     {
         title: "मराठी",
-        subtitle: "Marathi"
+        subtitle: "Marathi",
+        code: ''
     },
     {
         title: "Melayu",
-        subtitle: "Malay"
+        subtitle: "Malay",
+        code: ''
     },
     {
         title: "Norsk",
-        subtitle: "Norwegian"
+        subtitle: "Norwegian",
+        code: ''
     },
     {
         title: "नेपाली",
-        subtitle: "Nepali"
+        subtitle: "Nepali",
+        code: ''
     },
     {
         title: "Nederlands",
-        subtitle: "Dutch"
+        subtitle: "Dutch",
+        code: ''
     },
     {
         title: "ଓଡ଼ିଆ",
-        subtitle: "Odia"
+        subtitle: "Odia",
+        code: ''
     },
     {
         title: "ਪੰਜਾਬੀ",
-        subtitle: "Punjabi"
+        subtitle: "Punjabi",
+        code: ''
     },
     {
         title: "پنجابی",
-        subtitle: "Punjabi (Naskh)"
+        subtitle: "Punjabi (Naskh)",
+        code: ''
     },
     {
         title: "Polski",
-        subtitle: "Polish"
+        subtitle: "Polish",
+        code: ''
     },
     {
         title: "Português do Brasil",
-        subtitle: "Brazilian Portuguese"
+        subtitle: "Brazilian Portuguese",
+        code: ''
     },
     {
         title: "Português",
-        subtitle: "European Portuguese"
+        subtitle: "European Portuguese",
+        code: ''
     },
     {
         title: "Română",
-        subtitle: "Romanian"
+        subtitle: "Romanian",
+        code: ''
     },
     {
         title: "Русский",
-        subtitle: "Russian"
+        subtitle: "Russian",
+        code: ''
     },
     {
         title: "Slovenčina",
-        subtitle: "Slovak"
+        subtitle: "Slovak",
+        code: ''
     },
     {
         title: "Slovenski",
-        subtitle: "Slovenian"
+        subtitle: "Slovenian",
+        code: ''
     },
     {
         title: "Srpski",
-        subtitle: "Serbian"
+        subtitle: "Serbian",
+        code: ''
     },
     {
         title: "Svenska",
-        subtitle: "Swedish"
+        subtitle: "Swedish",
+        code: ''
     },
     {
         title: "Kiswahili",
-        subtitle: "Swahili"
+        subtitle: "Swahili",
+        code: ''
     },
     {
         title: "தமிழ்",
-        subtitle: "Tamil"
+        subtitle: "Tamil",
+        code: ''
     },
     {
         title: "తెలుగు",
-        subtitle: "Telugu"
+        subtitle: "Telugu",
+        code: ''
     },
     {
         title: "ภาษาไทย",
-        subtitle: "Thai"
+        subtitle: "Thai",
+        code: ''
     },
     {
         title: "Türkçe",
-        subtitle: "Turkish"
+        subtitle: "Turkish",
+        code: ''
     },
     {
         title: "Українська",
-        subtitle: "Ukrainian"
+        subtitle: "Ukrainian",
+        code: ''
     },
     {
         title: "اردو",
-        subtitle: "Urdu"
+        subtitle: "Urdu",
+        code: ''
     },
     {
         title: "Tiếng Việt",
-        subtitle: "Vietnamese"
+        subtitle: "Vietnamese",
+        code: ''
     },
     {
         title: "简体中文",
-        subtitle: "Simplified Chinese"
+        subtitle: "Simplified Chinese",
+        code: ''
     },
     {
         title: "繁體中文 (香港)",
-        subtitle: "Chinese (Traditional) Hong Kong"
+        subtitle: "Chinese (Traditional) Hong Kong",
+        code: ''
     },
     {
         title: "中文",
-        subtitle: "Traditional Chinese"
+        subtitle: "Traditional Chinese",
+        code: 'zh-TW'
     },
     {
         title: "IsiZulu",
-        subtitle: "Zulu"
+        subtitle: "Zulu",
+        code: ''
     }
 ]

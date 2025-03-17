@@ -11,12 +11,15 @@ import Search from './_search/search.tsx'
 import { color } from '../../common/button/button.type.ts'
 
 // data
-import { navBarMenu } from '../../../data/navBarMenu.tsx'
+import { useNavBarMenu } from '../../../data/navBarMenu.tsx'
 
 // style
 import './navBar.sass'
 
 const NavBar = () => {
+
+    const navBarMenu = useNavBarMenu()
+
     return (
         <nav className="navBar">
             <Row>

@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next'
+
 // components
 import { Row, Col } from '../../Layout/layout'
 import { Button } from '../../common/button/button'
@@ -11,24 +13,33 @@ import './langSelect.sass'
 // data
 import { langBtn } from '../../../data/langBtn'
 
-const LangSelect = () => {
+// type
+import { LangSelectProps } from './langSelect.type'
+
+const LangSelect: React.FC<LangSelectProps> = (props) => {
+
+    const { closeOnClick, langSelectHandleClick } = props
+    const { t } = useTranslation()
+
     return (
         <div className='langSelectArea'>
+            <div className="langSelectBody" onClick={closeOnClick}></div>
             <div className="langSelect">
                 <Row className='langSelect__header'>
                     <Col className='langSelect__title'>
-                        <h2>Choose a language</h2>
-                        <p>This updates what you read on open.spotify.com</p>
+                        <h2>{t('choose a language')}</h2>
+                        <p>{t('this updates what you read on open.spotify.com')}</p>
                     </Col>
                     <Col className='langSelect__closeArea'>
                         <Button
                             content={<><IoMdClose /></>}
                             className='langSelect__closeBtn'
+                            onClick={closeOnClick}
                         />
                     </Col>
                 </Row>
                 <div className='langSelect__content'>
-                    {langBtn.map(({ title, subtitle }) => {
+                    {langBtn.map(({ title, subtitle, code }) => {
                         return (
                             <Button
                                 key={title}
@@ -36,6 +47,7 @@ const LangSelect = () => {
                                 bdrs={false}
                                 fontSize={16}
                                 hoverBg='gray'
+                                onClick={() => langSelectHandleClick(title, code)}
                                 content={
                                     <>
                                         <p>{title}</p>
