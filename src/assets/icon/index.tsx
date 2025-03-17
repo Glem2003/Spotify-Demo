@@ -6,6 +6,7 @@ import { FaRegArrowAltCircleDown } from "react-icons/fa";
 import { BiLibrary } from "react-icons/bi";
 import { IoMdAdd } from "react-icons/io";
 import { MdOutlineLanguage } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
 
 export {
     ImSpotify,
@@ -15,5 +16,6 @@ export {
     FaRegArrowAltCircleDown,
     BiLibrary,
     IoMdAdd,
-    MdOutlineLanguage
+    MdOutlineLanguage,
+    IoMdClose
 }

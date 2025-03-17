@@ -35,6 +35,7 @@ const NavBar = () => {
                         btnBg='black'
                         hoverBig
                         hoverBg='black'
+                        fontSize={18}
                     />
                     <Search />
                 </Col>
