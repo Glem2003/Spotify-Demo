@@ -1,5 +1,5 @@
 @use 'variable.sass'
-    
+
 *
     margin: 0
     padding: 0
@@ -7,5 +7,18 @@
     font-family: 'arial'
 
 body
-    background: variable.$bgColor
+    background: variable.$primaryColor
     font-size: 16px
+
+a
+    color: unset
+    text-decoration: unset
+
+ul
+    list-style-type: none
+
+// Custom class 
+.link
+    cursor: pointer
+    &:hover
+        text-decoration: underline

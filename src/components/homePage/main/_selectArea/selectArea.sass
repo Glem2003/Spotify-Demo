@@ -1,0 +1,17 @@
+@use '../../../../assets/style/variable'
+
+// layout
+.selectArea
+    background-color: variable.$thirdColor
+    height: 100%
+    overflow-y: scroll
+    +variable.scrollbar(10px, #555, transparent)
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 36px
+
+// element
+.selectArea
+    &__section
+        flex-basis: 300px

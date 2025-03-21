@@ -1,17 +1,54 @@
-.button
+.btn
+    font-size: 12px
     color: white
     width: max-content
     padding: 12px 15px
     border-radius: 25px
-    cursor: pointer
     font-weight: 750
 
 // module
-.button--bg-white
+.btn--cursor-default
+    cursor: default
+
+.btn--cursor-pointer
+    cursor: pointer
+
+.btn--font-size-14
+    font-size: 14px
+
+.btn--font-size-16
+    font-size: 16px
+
+.btn--font-size-18
+    font-size: 18px
+
+.btn--bg-white
     color: black
     background: white
 
-.button--hover-big
-    &:hover
-        background: #efeded
-        transform: scale(1.05)
+.btn--bg-black
+    background: #1f1f1f
+
+.btn--color-white
+    color: #efeded
+
+.btn--color-gray
+    color: #b3b3b3
+
+.btn--hover-big:hover
+    transform: scale(1.05)
+
+.btn--hover-bg-white:hover
+    background: #efeded
+
+.btn--hover-bg-black:hover
+    background: #2a2a2a
+
+.btn--hover-bg-gray:hover
+    background: #3e3e3e
+
+.btn--hover-text-white:hover
+    color: white !important
+
+.btn--bdrs-unset
+    border-radius: unset
