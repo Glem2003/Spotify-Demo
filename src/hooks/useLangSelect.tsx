@@ -18,10 +18,12 @@ const useLangSelect = () => {
     }, [i18n.language]);
 
     const handleSelectLang = (value: string, code: string) => {
-        setLang(value)
-        setActive(false)
-        setLanguageCode(code)
-        i18n.changeLanguage(code)
+        if (code != '') {
+            setLang(value)
+            setActive(false)
+            setLanguageCode(code)
+            i18n.changeLanguage(code)
+        }
     }
 
     const handleClick = () => {

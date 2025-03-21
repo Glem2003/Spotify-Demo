@@ -21,7 +21,8 @@ const Button: React.FC<ButtonProps> = (props) => {
         bdrs = true,
         ariaLabel,
         onClick,
-        cursor = 'pointer'
+        cursor = 'pointer',
+        
     } = props
 
     return (

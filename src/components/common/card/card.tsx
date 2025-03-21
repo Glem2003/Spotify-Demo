@@ -8,7 +8,7 @@ import { cardProps } from './card.type'
 
 const Card: React.FC<cardProps> = (props) => {
 
-    const { className, children } = props
+    const { className, children, onMouseEnter, onMouseLeave } = props
 
     return (
         <div
@@ -18,6 +18,8 @@ const Card: React.FC<cardProps> = (props) => {
                     'card'
                 )
             }
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
         >
             {children}
         </div>

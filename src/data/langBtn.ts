@@ -87,7 +87,7 @@ export const langBtn = [
     {
         title: "English",
         subtitle: "United Kingdom",
-        code: ''
+        code: 'en-GB'
     },
     {
         title: "Español de España",
@@ -352,7 +352,7 @@ export const langBtn = [
     {
         title: "简体中文",
         subtitle: "Simplified Chinese",
-        code: ''
+        code: 'zh-CN'
     },
     {
         title: "繁體中文 (香港)",

@@ -48,6 +48,7 @@ const LangSelect: React.FC<LangSelectProps> = (props) => {
                                 fontSize={16}
                                 hoverBg='gray'
                                 onClick={() => langSelectHandleClick(title, code)}
+                                {...(code === '' ? { ariaLabel: 'disable' } : {})}
                                 content={
                                     <>
                                         <p>{title}</p>

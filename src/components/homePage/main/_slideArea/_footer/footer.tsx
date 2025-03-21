@@ -28,7 +28,7 @@ const Footer: React.FC<footerProp> = (props) => {
                         )
                     })}
                 </ul>
-                <Link to={'#!'} className='slideArea__footerCookies'>Cookies</Link>
+                <Link to={'#!'} className='slideArea__footerCookies'>{t('cookies')}</Link>
             </nav>
             <Button
                 content={<><MdOutlineLanguage />{lang}</>}
