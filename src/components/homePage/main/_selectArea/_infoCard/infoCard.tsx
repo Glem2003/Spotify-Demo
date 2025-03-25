@@ -1,5 +1,4 @@
 import clsx from "clsx"
-import { Link } from "react-router-dom"
 
 // components
 import Card from "../../../../common/card/card"
@@ -46,8 +45,8 @@ const InfoCard: React.FC<InfoCardProps> = (props) => {
                 />
             </div>
             <div className="infoCard__textBox">
-                {album && <p className="infoCard__name link"><Link to={'#!'}>{album}</Link></p>}
-                {artists && <p className="infoCard__type link"><Link to={'#!'}>{artists}</Link></p>}
+                {album && <p className="infoCard__name link">{album}</p>}
+                {artists && <p className="infoCard__type link">{artists}</p>}
                 {subtitle && <p className="infoCard__subtitle">{subtitle}</p>}
             </div>
         </Card>

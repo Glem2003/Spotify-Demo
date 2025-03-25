@@ -33,5 +33,31 @@
 
     "trending songs":"",
     "show all":"",
-    "popular artists":""
+    "popular artists":"",
+    "popular albums and singles":"",
+    "popular radio":"",
+    "featured Charts":"",
+    "state of music today":"",
+
+    "company":"",
+    "communities":"",
+    "useful links":"",
+    "spotify Plans":"",
+
+    "about":"",
+    "jobs": "" ,
+    "list": "" ,
+    "for the Record":"",
+    "for Artists": "" ,
+    "developers": "" ,
+    "advertising": "" ,
+    "investors": "" ,
+    "vendors": "" ,
+    "free Mobile App": "" ,
+    "premium Individual": "" ,
+    "premium Duo": "" ,
+    "premium Family": "" ,
+    "premium Student": "" ,
+    "spotify Free": "" 
+
 }

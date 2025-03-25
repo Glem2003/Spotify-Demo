@@ -7,6 +7,9 @@ import { IoMdAdd } from "react-icons/io";
 import { MdOutlineLanguage } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import { IoPlaySharp } from "react-icons/io5";
+import { IoLogoInstagram } from "react-icons/io";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 export {
     ImSpotify,
@@ -17,5 +20,8 @@ export {
     IoMdAdd,
     MdOutlineLanguage,
     IoMdClose,
-    IoPlaySharp
+    IoPlaySharp,
+    IoLogoInstagram,
+    FaTwitter,
+    FaFacebook
 }
