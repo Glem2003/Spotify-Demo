@@ -16,8 +16,10 @@ import LanguageDetector from "i18next-browser-languagedetector";
                 order: ["localStorage", "cookie", "navigator"], // 語言偵測順序
                 caches: ["localStorage", "cookie"], // 把語言設定存入 localStorage 和 cookie
             },
+            backend: {
+                loadPath: "/Spotify-Demo/locales/{{lng}}/translation.json"
+            },
         });
-
 })();
 
 export default i18n;
