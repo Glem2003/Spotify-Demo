@@ -10,8 +10,41 @@
         display: flex
         flex-direction: column
         gap: 36px
+    &__footer
+        height: 400px
+        margin-top: 50px
+        padding: 0 20px
+    &__info
+        display: flex
+        height: 250px
+    &__copyright
+        padding-top: 50px
+    &__footerIconLists
+        display: flex
+        justify-content: space-between
+        align-items: start
+        flex-basis: 200px
+    &__footerLists
+        display: flex
 
 // element
 .selectArea
     &__section
         flex-basis: 300px
+    &__copyright
+        font-size: 14px
+        color: variable.$textColor
+        border-top: 2px solid variable.$secondaryColor
+    &__footerIcon
+        svg
+            transform: scale(1.5)
+
+.list
+    font-size: 16px
+    font-weight: 750
+    flex: 1
+    display: flex
+    flex-direction: column
+    gap: 12px
+    &__text
+        color: variable.$textColor

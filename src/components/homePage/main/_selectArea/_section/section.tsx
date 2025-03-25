@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
 // components
@@ -13,16 +12,16 @@ import { sectionProps } from "./section.type"
 const Section: React.FC<sectionProps> = (props) => {
 
     const { t } = useTranslation()
-    
-    const { title, contentList, isImgCircle } = props
 
-    const shuffledContent = [...(contentList || [])].sort(() => Math.random() - 0.5)
+    const { title, contentList, isImgCircle, shuffled = true } = props
+
+    const shuffledContent = shuffled ? [...(contentList || [])].sort(() => Math.random() - 0.5) : [...(contentList || [])]
 
     return (
         <section className="section">
             <div className="section__header">
-                <h2 className="section__title link"><Link to={'#!'}>{title}</Link></h2>
-                <p className="section__text link"><Link to={'#!'}>{t("show all")}</Link></p>
+                <h2 className="section__title link">{title}</h2>
+                <p className="section__text link">{t("show all")}</p>
             </div>
             <div className="section__content">
                 {shuffledContent.slice(0, 5).map((item, index) => {

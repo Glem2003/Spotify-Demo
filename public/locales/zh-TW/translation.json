@@ -33,5 +33,30 @@
 
     "trending songs":"當紅歌曲",
     "show all":"顯示所有內容",
-    "popular artists":"熱門藝人"
+    "popular artists":"熱門藝人",
+    "popular albums and singles":"熱門專輯和單曲",
+    "popular radio":"熱門電台",
+    "featured Charts":"精選排行榜",
+    "state of music today":"早安，週末來了!",
+
+    "company":"公司簡介",
+    "communities":"社群",
+    "useful links":"常用連結",
+    "spotify Plans":"Spotify 方案",
+
+    "about":"關於我們",
+    "jobs": "職位空缺" ,
+    "for the Record":"For the Record",
+    "for Artists": "藝人專屬" ,
+    "developers": "開發商" ,
+    "advertising": "廣告宣傳" ,
+    "investors": "投資者" ,
+    "vendors": "供應商" ,
+    "free Mobile App": "免費行動版 App" ,
+    "premium Individual": "Premium Individual" ,
+    "premium Duo": "Premium Duo" ,
+    "premium Family": "Premium Family" ,
+    "premium Student": "Premium Student" ,
+    "spotify Free": "Spotify Free"
+
 }

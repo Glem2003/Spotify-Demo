@@ -33,5 +33,29 @@
 
     "trending songs":"热播歌曲",
     "show all":"显示全部",
-    "popular artists":"当红艺人"
+    "popular artists":"当红艺人",
+    "popular albums and singles":"热门专辑与单曲",
+    "popular radio":"热门电台",
+    "featured Charts":"精选排行榜",
+    "state of music today":"今天的音乐状况",
+
+    "company":"公司",
+    "communities":"社区",
+    "useful links":"实用链接",
+    "spotify Plans":"Spotify 套餐",
+
+    "about":"关于",
+    "jobs": "招聘信息" ,
+    "for the Record":"For the Record",
+    "for Artists": "艺人专属" ,
+    "developers": "开发者" ,
+    "advertising": "广告" ,
+    "investors": "投资人" ,
+    "vendors": "供应商" ,
+    "free Mobile App": "免费移动应用" ,
+    "premium Individual": "Premium Individual" ,
+    "premium Duo": "Premium Duo" ,
+    "premium Family": "Premium Family" ,
+    "premium Student": "Premium Student" ,
+    "spotify Free": "Spotify Free" 
 }

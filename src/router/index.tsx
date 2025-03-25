@@ -6,7 +6,7 @@ import { routes } from '../data/routes'
 
 const AppRoute = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Spotify-Demo">
             <Suspense fallback={<>loading...</>}>
                 <Routes>
                     {routes.map(({ path, element, index }) => {
