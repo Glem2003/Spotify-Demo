@@ -10,6 +10,8 @@ import { IoPlaySharp } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { GoHome } from "react-icons/go";
+import { PiBrowsersFill } from "react-icons/pi";
 
 export {
     ImSpotify,
@@ -23,5 +25,7 @@ export {
     IoPlaySharp,
     IoLogoInstagram,
     FaTwitter,
-    FaFacebook
+    FaFacebook,
+    GoHome,
+    PiBrowsersFill
 }

@@ -11,4 +11,5 @@ export interface ColProps {
     children?: ReactNode;
     horizonRight?: boolean
     verticalCenter?: boolean
+    onClick?: () => void
 }

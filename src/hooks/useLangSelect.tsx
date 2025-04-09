@@ -26,12 +26,12 @@ const useLangSelect = () => {
         }
     }
 
-    const handleClick = () => {
+    const handleLangSelectController = () => {
         setActive(prev => !prev)
     }
 
     return {
-        handleClick,
+        handleLangSelectController,
         handleSelectLang,
         isActive,
         isLang,

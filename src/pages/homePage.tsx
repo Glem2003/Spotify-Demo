@@ -1,5 +1,6 @@
 // hook
 import useLangSelect from '../hooks/useLangSelect.tsx'
+import useActiveValue from '../hooks/useActiveValue.tsx'
 
 // style
 import './homePage.sass'
@@ -15,18 +16,31 @@ const HomePage = () => {
     const {
         isActive,
         isLang,
-        handleClick,
+        handleLangSelectController,
         handleSelectLang
     } = useLangSelect()
 
+    const {
+        activeValue,
+        handleActiveValue
+    } = useActiveValue()
+
     return (
         <div className='homePage'>
-            <NavBar />
-            <Main onClick={handleClick} lang={isLang} />
+            <NavBar
+                value={activeValue}
+                homeLogoBtnClick={() => handleActiveValue('home')}
+            />
+            <Main
+                value={activeValue}
+                lang={isLang}
+                onClick={handleLangSelectController}
+                sectionOnClick={handleActiveValue}
+            />
             <MusicPlay />
             {isActive &&
                 <LangSelect
-                    closeOnClick={handleClick}
+                    closeOnClick={handleLangSelectController}
                     langSelectHandleClick={handleSelectLang}
                 />}
         </div>

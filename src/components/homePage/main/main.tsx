@@ -3,19 +3,30 @@ import SlideArea from "./_slideArea/slideArea.tsx"
 import SelectArea from "./_selectArea/selectArea.tsx"
 
 // type
-import { footerProp } from "./_slideArea/_footer/footer.type.ts"
+import { mainProp } from "./main.type.ts"
 
-const Main: React.FC<footerProp> = (props) => {
+const Main: React.FC<mainProp> = (props) => {
 
-    const { onClick, lang } = props
+    const {
+        onClick,
+        lang,
+        value,
+        sectionOnClick
+    } = props
 
     return (
         <Row className='homePageMain'>
             <Col className='homePageSlideArea'>
-                <SlideArea onClick={onClick} lang={lang} />
+                <SlideArea
+                    onClick={onClick}
+                    lang={lang}
+                />
             </Col>
             <Col className='homePageSelectArea'>
-                <SelectArea />
+                <SelectArea
+                    value={value}
+                    sectionOnClick={sectionOnClick}
+                />
             </Col>
         </Row>
     )
