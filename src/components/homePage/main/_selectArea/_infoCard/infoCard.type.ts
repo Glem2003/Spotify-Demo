@@ -4,4 +4,5 @@ export interface InfoCardProps {
     subtitle?: string
     img?: string
     isImgCircle?: boolean
+    bigSize?: boolean
 }

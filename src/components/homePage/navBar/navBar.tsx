@@ -1,7 +1,7 @@
 // icon
-import { MdHomeFilled } from '../../../assets/icon/index.tsx'
+import { MdHomeFilled, GoHome } from '../../../assets/icon/index.tsx'
 
-//components
+// components
 import { Row, Col } from "../../Layout/layout.tsx"
 import { Button } from "../../common/button/button.tsx"
 import Logo from "./_logo/logo.tsx"
@@ -16,7 +16,12 @@ import { useNavBarMenu } from '../../../data/navBarMenu.tsx'
 // style
 import './navBar.sass'
 
-const NavBar = () => {
+// type
+import { navBarProps } from './navBar.type.ts'
+
+const NavBar: React.FC<navBarProps> = (props) => {
+
+    const { homeLogoBtnClick, value, searchBtnClick } = props
 
     const navBarMenu = useNavBarMenu()
 
@@ -24,7 +29,10 @@ const NavBar = () => {
         <nav className="navBar">
             <Row>
 
-                <Col className='navBar__logoBox'>
+                <Col
+                    className='navBar__logoBox'
+                    onClick={homeLogoBtnClick}
+                >
                     <Logo link="/" />
                 </Col>
 
@@ -33,14 +41,15 @@ const NavBar = () => {
                     className='navBar__searchBox'
                 >
                     <Button
-                        content={<MdHomeFilled />}
+                        content={value === 'home' ? <MdHomeFilled /> : <GoHome />}
                         className='navBar__homeLogo'
                         btnBg='black'
                         hoverBig
                         hoverBg='black'
                         fontSize={18}
+                        onClick={homeLogoBtnClick}
                     />
-                    <Search />
+                    <Search onClick={searchBtnClick} value={value} />
                 </Col>
 
                 <Col className='navBar__functionArea'>

@@ -18,9 +18,20 @@ import { InfoCardProps } from "./infoCard.type"
 
 const InfoCard: React.FC<InfoCardProps> = (props) => {
 
-    const { album, artists, subtitle, img, isImgCircle } = props
+    const {
+        album,
+        artists,
+        subtitle,
+        img,
+        isImgCircle,
+        bigSize
+    } = props
 
-    const { isPlayBtnVisible, showPlayBtn, hidePlayBtn } = usePlayBtnShow()
+    const {
+        isPlayBtnVisible,
+        showPlayBtn,
+        hidePlayBtn
+    } = usePlayBtnShow()
 
     return (
         <Card
@@ -28,7 +39,12 @@ const InfoCard: React.FC<InfoCardProps> = (props) => {
             onMouseEnter={showPlayBtn}
             onMouseLeave={hidePlayBtn}
         >
-            <div className="infoCard__imgBox">
+            <div className={
+                clsx(
+                    "infoCard__imgBox",
+                    bigSize && 'infoCard__imgBox--size-196'
+                )
+            }>
                 <img
                     src={img}
                     alt=""

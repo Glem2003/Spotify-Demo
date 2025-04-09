@@ -11,7 +11,11 @@ import { RowProps, ColProps } from './layout.type'
 export const Row: React.FC<RowProps> = (props) => {
 
 
-    const { children, className, verticalCenter } = props
+    const {
+        children,
+        className,
+        verticalCenter
+    } = props
 
     return (
         <div
@@ -30,7 +34,13 @@ export const Row: React.FC<RowProps> = (props) => {
 
 export const Col: React.FC<ColProps> = (props) => {
 
-    const { children, className, horizonRight, verticalCenter } = props
+    const {
+        children,
+        className,
+        horizonRight,
+        verticalCenter,
+        onClick
+    } = props
 
     return (
         <div
@@ -42,6 +52,7 @@ export const Col: React.FC<ColProps> = (props) => {
                     verticalCenter && 'col--vertical-center'
                 )
             }
+            onClick={onClick}
         >
             {children}
         </div>

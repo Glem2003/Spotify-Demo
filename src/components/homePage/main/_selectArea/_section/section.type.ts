@@ -7,5 +7,9 @@ export interface sectionProps {
         img: string;
     }[]
     isImgCircle?: boolean
-    shuffled?: boolean
+    shuffled?: boolean,
+    sectionOnClick?: () => void,
+    link?: boolean
+    bigSize?: boolean
+    slice?: boolean
 }
